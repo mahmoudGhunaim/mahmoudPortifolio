@@ -7,7 +7,7 @@ import type { Localized } from '../i18n/types';
 export const profile = {
   name: { en: 'Mahmoud Ghunaim', ar: 'محمود غنيم' } satisfies Localized,
   initials: 'MG',
-  role: { en: 'Front-End Developer', ar: 'مطوّر واجهات أمامية' } satisfies Localized,
+  role: { en: 'Full-Stack Developer', ar: 'مطوّر Full-Stack' } satisfies Localized,
   tagline: {
     en: 'I craft fast, responsive and accessible web experiences with React, JavaScript and PHP — and I use AI tools to ship them faster.',
     ar: 'أصمّم تجارب ويب سريعة ومتجاوبة وسهلة الوصول باستخدام React وJavaScript وPHP — وأستعين بأدوات الذكاء الاصطناعي لإنجازها بشكل أسرع.',
@@ -15,11 +15,11 @@ export const profile = {
 
   about: {
     en: [
-      'I am a motivated, fast-learning Front-End Developer with hands-on experience in React, PHP and JavaScript. I enjoy turning designs into smooth, dynamic interfaces and wiring them to real data through REST APIs.',
+      'I am a motivated, fast-learning Full-Stack Developer with hands-on experience in React, PHP and JavaScript. I enjoy turning designs into smooth, dynamic interfaces and wiring them to real data through REST APIs.',
       'I care about performance optimization and clean collaboration in Agile teams, and I am passionate about using AI tools to improve development efficiency and problem-solving.',
     ],
     ar: [
-      'مطوّر واجهات أمامية متحمّس وسريع التعلّم، أمتلك خبرة عملية في React وPHP وJavaScript. أستمتع بتحويل التصاميم إلى واجهات سلسة وديناميكية وربطها بالبيانات الحقيقية عبر واجهات REST API.',
+      'مطوّر Full-Stack متحمّس وسريع التعلّم، أمتلك خبرة عملية في React وPHP وJavaScript. أستمتع بتحويل التصاميم إلى واجهات سلسة وديناميكية وربطها بالبيانات الحقيقية عبر واجهات REST API.',
       'أهتم بتحسين الأداء والعمل الجماعي ضمن فرق Agile، وشغوف باستخدام أدوات الذكاء الاصطناعي لرفع كفاءة التطوير وحل المشكلات.',
     ],
   } satisfies Localized<string[]>,

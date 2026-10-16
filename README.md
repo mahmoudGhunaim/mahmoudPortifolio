@@ -1,6 +1,6 @@
 # Mahmoud Ghunaim — Portfolio
 
-Personal portfolio for **Mahmoud Ghunaim**, Front-End Developer.
+Personal portfolio for **Mahmoud Ghunaim**, Full-Stack Developer.
 Single-page site with an interactive 3D hero, Lottie animations, English/Arabic (full RTL) and dark/light themes.
 
 **Stack:** Vite · React 19 · TypeScript · Tailwind CSS 4 · Framer Motion · @react-three/fiber + drei · dotLottie
