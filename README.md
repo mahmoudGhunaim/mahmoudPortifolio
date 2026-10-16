@@ -58,7 +58,6 @@ src/
 | --- | --- |
 | Training provider, dates, modules, skills | `src/data/training.ts` |
 | Project screenshots (≈1200×750 `.webp`) | `src/assets/projects/` + imports in `projects.ts` |
-| Your domain (canonical + OG URLs) | `index.html` (search `mahmoud-ghunaim.dev`) |
 
 ## Performance & accessibility notes
 
@@ -90,6 +89,6 @@ CLI alternative: `npx netlify-cli deploy --build --prod`.
 2. Framework preset: **Vite** (or build command `npm run build`, output `dist`).
 3. Set the `NODE_VERSION` environment variable to `22` if the build image defaults to an older Node.
 
-CLI alternative: `npm run build && npx wrangler pages deploy dist --project-name mahmoud-portfolio`.
+CLI alternative: `npm run build && npx wrangler pages deploy dist --project-name mahmoud-ghunaim`.
 
-After deploying, update the canonical / `og:url` / `og:image` URLs in `index.html` to your real domain.
+Live site: **https://mahmoud-ghunaim.pages.dev** (Cloudflare Pages project `mahmoud-ghunaim`). Redeploy with `npm run build && npx wrangler pages deploy dist --project-name mahmoud-ghunaim --branch main`. If you add a custom domain, update the canonical / `og:url` / `og:image` URLs in `index.html`.
