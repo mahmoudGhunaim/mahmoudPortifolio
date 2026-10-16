@@ -15,11 +15,11 @@ export const profile = {
 
   about: {
     en: [
-      'I am a motivated, fast-learning Full-Stack Developer with hands-on experience in React, PHP and JavaScript. I enjoy turning designs into smooth, dynamic interfaces and wiring them to real data through REST APIs.',
+      'I am a motivated, fast-learning Full-Stack Developer with hands-on experience in React, PHP and JavaScript. I build smooth, dynamic interfaces on the front end and the PHP logic, custom WordPress plugins and REST APIs that power them on the back end.',
       'I care about performance optimization and clean collaboration in Agile teams, and I am passionate about using AI tools to improve development efficiency and problem-solving.',
     ],
     ar: [
-      'مطوّر Full-Stack متحمّس وسريع التعلّم، أمتلك خبرة عملية في React وPHP وJavaScript. أستمتع بتحويل التصاميم إلى واجهات سلسة وديناميكية وربطها بالبيانات الحقيقية عبر واجهات REST API.',
+      'مطوّر Full-Stack متحمّس وسريع التعلّم، أمتلك خبرة عملية في React وPHP وJavaScript. أبني واجهات سلسة وديناميكية في الواجهة الأمامية، ومنطق PHP وإضافات WordPress المخصّصة وواجهات REST API التي تشغّلها في الواجهة الخلفية.',
       'أهتم بتحسين الأداء والعمل الجماعي ضمن فرق Agile، وشغوف باستخدام أدوات الذكاء الاصطناعي لرفع كفاءة التطوير وحل المشكلات.',
     ],
   } satisfies Localized<string[]>,
@@ -30,8 +30,8 @@ export const profile = {
     ar: 'بكالوريوس علم الحاسوب — جامعة الزرقاء (التخرّج المتوقع 2027)',
   } satisfies Localized,
   focus: {
-    en: 'React · REST APIs · Performance',
-    ar: 'React · واجهات REST · الأداء',
+    en: 'React · PHP · REST APIs',
+    ar: 'React · PHP · واجهات REST',
   } satisfies Localized,
 
   contact: {

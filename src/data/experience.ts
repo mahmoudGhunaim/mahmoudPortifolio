@@ -13,7 +13,7 @@ export interface ExperienceItem {
 
 export const experience: ExperienceItem[] = [
   {
-    role: { en: 'Front-End Developer', ar: 'مطوّر واجهات أمامية' },
+    role: { en: 'Full-Stack Developer', ar: 'مطوّر Full-Stack' },
     company: 'Softylus',
     start: '2023-07',
     end: '2026-05',

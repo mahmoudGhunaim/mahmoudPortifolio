@@ -8,11 +8,15 @@ export interface SkillGroup {
 
 export const skillGroups: SkillGroup[] = [
   { id: 'frontend', title: { en: 'Front-End', ar: 'الواجهة الأمامية' }, items: ['React', 'JavaScript', 'HTML', 'CSS'] },
-  { id: 'backend', title: { en: 'Back-End', ar: 'الواجهة الخلفية' }, items: ['PHP'] },
+  {
+    id: 'backend',
+    title: { en: 'Back-End', ar: 'الواجهة الخلفية' },
+    items: ['PHP', 'REST API', 'SQL', 'WordPress Plugins'],
+  },
   {
     id: 'tools',
     title: { en: 'Tools', ar: 'الأدوات' },
-    items: ['Git', 'GitHub', 'REST API', 'Bootstrap', 'Tailwind'],
+    items: ['Git', 'GitHub', 'Bootstrap', 'Tailwind'],
   },
   { id: 'cms', title: { en: 'CMS', ar: 'أنظمة إدارة المحتوى' }, items: ['WordPress', 'Shopify'] },
 ];
