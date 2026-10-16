@@ -91,4 +91,6 @@ CLI alternative: `npx netlify-cli deploy --build --prod`.
 
 CLI alternative: `npm run build && npx wrangler pages deploy dist --project-name mahmoud-ghunaim`.
 
-Live site: **https://mahmoud-ghunaim.pages.dev** (Cloudflare Pages project `mahmoud-ghunaim`). Redeploy with `npm run build && npx wrangler pages deploy dist --project-name mahmoud-ghunaim --branch main`. If you add a custom domain, update the canonical / `og:url` / `og:image` URLs in `index.html`.
+Live site: **https://mahmoud-ghunaim.pages.dev** (Cloudflare Pages project `mahmoud-ghunaim`).
+
+**Automatic deploys:** `.github/workflows/deploy.yml` builds and deploys on every push to `main`. It needs one repository secret, `CLOUDFLARE_API_TOKEN` (a Cloudflare API token with *Cloudflare Pages: Edit*). Manual deploy: `npm run build && npx wrangler pages deploy dist --project-name mahmoud-ghunaim --branch main`. If you add a custom domain, update the canonical / `og:url` / `og:image` URLs in `index.html`.

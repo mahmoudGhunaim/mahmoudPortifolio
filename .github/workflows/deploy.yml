@@ -1,0 +1,47 @@
+# Builds the site and deploys it to Cloudflare Pages on every push to main.
+# Requires the repository secret CLOUDFLARE_API_TOKEN
+# (Cloudflare API token with the "Cloudflare Pages: Edit" permission).
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ae21598c4e54f0ed418f7b4a3f4f0c83
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run build
+
+      - name: Skip deploy (CLOUDFLARE_API_TOKEN secret not set)
+        if: env.CLOUDFLARE_API_TOKEN == ''
+        run: echo "::warning::Add the CLOUDFLARE_API_TOKEN repository secret to enable automatic deploys."
+
+      - name: Deploy to Cloudflare Pages
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ env.CLOUDFLARE_ACCOUNT_ID }}
+          wranglerVersion: '4.112.0'
+          command: pages deploy dist --project-name mahmoud-ghunaim --branch main
