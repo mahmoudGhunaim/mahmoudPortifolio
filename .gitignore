@@ -1,0 +1,12 @@
+node_modules
+dist
+*.local
+.DS_Store
+*.log
+.vercel
+.netlify
+.env
+.env.*
+!.env.example
+.wrangler
+.impeccable/
