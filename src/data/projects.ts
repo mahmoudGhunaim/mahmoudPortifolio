@@ -26,17 +26,28 @@ export const projects: Project[] = [
   {
     id: 'ardalathath',
     title: 'Ard Al-Athath',
-    category: { en: 'Furniture showroom · Oman', ar: 'معرض أثاث · عُمان' },
+    category: { en: 'Website + ERP · Oman', ar: 'موقع ونظام إدارة · عُمان' },
     description: {
-      en: 'An Arabic-first website for a luxury furniture showroom in Sohar, Oman — bedrooms, majlis, living & dining, office furniture and commercial fit-outs.',
-      ar: 'موقع عربي لمعرض أثاث فاخر في صحار، عُمان — غرف نوم ومجالس وغرف معيشة وطعام وأثاث مكتبي وتجهيز المحلات.',
+      en: 'The website and private management system for Furniture Land in Sohar, Oman. One admin at erp.ardalathath.com runs the website, branches and accounts, in Arabic and English, on desktop and mobile, with role-based access for each user.',
+      ar: 'الموقع ونظام الإدارة الخاص بأرض الأثاث في صحار، عُمان. لوحة تحكم واحدة على erp.ardalathath.com تدير الموقع والفروع والحسابات، بالعربي والإنجليزي، على الكمبيوتر والجوال، ولكل مستخدم صلاحيات حسب دوره.',
     },
     highlights: {
-      // TODO: adjust to describe exactly what you built on this project
-      en: ['Fast single-page app built with React and Vite', 'Full Arabic RTL layout', 'Product categories showcase', 'SEO-optimised for local search in Oman'],
-      ar: ['تطبيق صفحة واحدة سريع مبني بـ React وVite', 'تخطيط عربي كامل من اليمين لليسار', 'عرض فئات المنتجات', 'تحسين محركات البحث للبحث المحلي في عُمان'],
+      en: [
+        'Dashboard with income, expenses and invoice totals, charts, alerts, and a counter of visitors who got in touch by WhatsApp, phone or email',
+        'Four business units (contracting company, Al-Waqiba and Tareef showrooms, factory), each with staff, salaries and advances, purchases, sales, inventory, projects and assets, plus a branch comparison page',
+        'Quotations and invoices in Omani rial, ready to print, and expenses tracked by category and payment method',
+        'Products, categories and the work gallery managed without a developer; uploads auto-converted to compressed WebP in one shared media library',
+        'Five roles (Owner, Branch manager, Accountant, Sales, View only), sign-in required, database-level data protection, admin hidden from search engines',
+      ],
+      ar: [
+        'لوحة رئيسية بملخص الدخل والمصاريف والفواتير، ورسوم بيانية وتنبيهات، وعداد للزوار الذين تواصلوا عبر واتساب والهاتف والبريد',
+        'أربعة أقسام (شركة المقاولات، معرض الوقيبة، معرض طريف، المصنع)، لكل منها الموظفون والرواتب والسلف والمشتريات والمبيعات والمخزون والمشاريع والأصول، مع صفحة لمقارنة أداء الفروع',
+        'عروض أسعار وفواتير بالريال العماني جاهزة للطباعة، وتسجيل المصاريف حسب الفئة وطريقة الدفع',
+        'إدارة المنتجات والفئات ومعرض الأعمال بدون مبرمج؛ والصور تتحول تلقائيًا إلى WebP مضغوطة في مكتبة وسائط واحدة',
+        'خمسة أدوار (مالك، مدير فرع، محاسب، مبيعات، مشاهدة فقط)، تسجيل دخول إلزامي، حماية البيانات على مستوى قاعدة البيانات، واللوحة مخفية عن محركات البحث',
+      ],
     },
-    tech: ['React', 'Vite', 'JavaScript', 'Cloudflare'],
+    tech: ['React', 'Vite', 'Cloudflare', 'Role-based access'],
     image: ardalathathImg,
     url: 'https://ardalathath.com',
   },
