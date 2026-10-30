@@ -1,7 +1,7 @@
 import type { Localized } from '../i18n/types';
-import tharwahAcademyImg from '../assets/projects/tharwah-academy.svg';
 import ardalathathImg from '../assets/projects/ardalathath.webp';
 import voltImg from '../assets/projects/volt.webp';
+import velaImg from '../assets/projects/vela.webp';
 
 /**
  * ✏️  EDIT ME — Projects
@@ -38,32 +38,25 @@ export const projects: Project[] = [
     tech: ['React', 'Vite', 'JavaScript', 'Cloudflare'],
     image: ardalathathImg,
     url: 'https://ardalathath.com',
-  },  {
-    id: 'tharwah-academy',
-    title: 'Tharwah Academy',
-    category: { en: 'E-learning platform · Saudi Arabia', ar: 'منصة تعليمية · السعودية' },
+  },
+  {
+    id: 'vela',
+    title: 'VELA Meridian',
+    category: { en: 'Automotive launch site', ar: 'موقع إطلاق سيارة' },
     description: {
-      en: 'A high-traffic WordPress platform for selling courses in Saudi Arabia.',
-      ar: 'منصة WordPress عالية الزيارات لبيع الدورات التدريبية في السعودية.',
+      en: 'A cinematic launch site for an all-electric grand tourer, built around a real-time 3D car rendered in the browser.',
+      ar: 'موقع إطلاق سينمائي لسيارة كهربائية فاخرة، يتمحور حول نموذج سيارة ثلاثي الأبعاد يُعرض مباشرة في المتصفح.',
     },
     highlights: {
-      en: [
-        'Worked directly on the live production environment',
-        'Tested every change on staging before release',
-        'Developed custom plugins for business needs',
-        'Modified the theme through code',
-      ],
-      ar: [
-        'العمل مباشرة على بيئة الإنتاج الحيّة',
-        'اختبار كل تعديل على بيئة التجربة قبل النشر',
-        'تطوير إضافات مخصّصة لاحتياجات العمل',
-        'تعديل القالب برمجيًا',
-      ],
+      // TODO: adjust to describe exactly what you built on this project
+      en: ['Real-time 3D car with React Three Fiber', 'Scroll-driven animation with GSAP ScrollTrigger', 'Smooth scrolling with Lenis', 'Design, energy, interior, gallery and reservation sections'],
+      ar: ['سيارة ثلاثية الأبعاد بالوقت الحقيقي باستخدام React Three Fiber', 'حركة مرتبطة بالتمرير باستخدام GSAP ScrollTrigger', 'تمرير سلس باستخدام Lenis', 'أقسام التصميم والطاقة والمقصورة والمعرض والحجز'],
     },
-    tech: ['WordPress', 'PHP', 'JavaScript', 'CSS'],
-    image: tharwahAcademyImg,
-    url: '#', // no public link
-  },  {
+    tech: ['Next.js', 'React Three Fiber', 'GSAP', 'Lenis'],
+    image: velaImg,
+    url: 'https://vela.mahmoudghunaim132.workers.dev/',
+  },
+  {
     id: 'volt-shop',
     title: 'VOLT Shop',
     category: { en: 'E-commerce store', ar: 'متجر إلكتروني' },
