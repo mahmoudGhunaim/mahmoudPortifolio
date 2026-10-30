@@ -10,7 +10,7 @@ export default function Projects() {
 
   return (
     <Section id="projects" eyebrow={t.projects.eyebrow} title={t.projects.title} titleAccent={t.projects.titleAccent}>
-      <ul className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <ul className="grid gap-6 md:grid-cols-2">
         {projects.map((project, i) => {
           const hasLink = project.url && project.url !== '#';
           return (

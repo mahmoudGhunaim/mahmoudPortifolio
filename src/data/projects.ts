@@ -2,6 +2,7 @@ import type { Localized } from '../i18n/types';
 import ardalathathImg from '../assets/projects/ardalathath.webp';
 import voltImg from '../assets/projects/volt.webp';
 import velaImg from '../assets/projects/vela.webp';
+import adelErpImg from '../assets/projects/adel-erp.webp';
 
 /**
  * ✏️  EDIT ME — Projects
@@ -72,5 +73,31 @@ export const projects: Project[] = [
     tech: ['Next.js', 'React', 'Cloudflare Workers'],
     image: voltImg,
     url: 'https://volt-shop.mahmoudghunaim132.workers.dev/',
+  },
+  {
+    id: 'adel-erp',
+    title: 'Adel ERP',
+    category: { en: 'Business ERP · Jordan', ar: 'نظام ERP · الأردن' },
+    description: {
+      en: 'A fully Arabic, right-to-left ERP for a business importing and parting out used American hybrid cars, replacing a paper-and-spreadsheet workflow with one connected system.',
+      ar: 'نظام ERP عربي بالكامل من اليمين لليسار لشركة تستورد السيارات الهجينة الأمريكية المستعملة وتبيع قطعها، يستبدل الورق والجداول بنظام واحد مترابط.',
+    },
+    highlights: {
+      en: [
+        'Inventory for whole cars and parts, with container tracking and full stock-movement history',
+        'Container, sales and repair invoices with draft / posted / void lifecycle and automatic stock sync',
+        'Debts, receipt and payment vouchers, and full account statements across every module',
+        'Printable, customer-ready documents; money never silently converted between currencies',
+      ],
+      ar: [
+        'مخزون للسيارات الكاملة وقطع الغيار مع تتبّع الحاويات وسجل كامل لحركة المخزون',
+        'فواتير حاويات ومبيعات وتصليح بدورة مسودّة / مُرحّلة / ملغاة ومزامنة تلقائية للمخزون',
+        'الديون وسندات القبض والصرف وكشوف حساب كاملة عبر جميع الوحدات',
+        'مستندات جاهزة للطباعة والتسليم للعميل؛ ولا تحويل خفي للعملات أبدًا',
+      ],
+    },
+    tech: ['Next.js', 'Supabase', 'Cloudflare Workers', 'Arabic RTL'],
+    image: adelErpImg,
+    url: '#', // private business system — no public link
   },
 ];
