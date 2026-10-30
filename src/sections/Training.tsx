@@ -27,10 +27,10 @@ export default function Training() {
                   {t.training.inProgress}
                 </span>
               )}
-              <span className="text-sm text-muted">{l(training.period)}</span>
+              {training.period && <span className="text-sm text-muted">{l(training.period)}</span>}
             </div>
             <h3 className="text-2xl font-bold text-text sm:text-3xl">{l(training.title)}</h3>
-            <p className="mt-1 font-medium text-accent-2">{l(training.provider)}</p>
+            {training.provider && <p className="mt-1 font-medium text-accent-2">{l(training.provider)}</p>}
             <p className="mt-4 max-w-2xl text-muted">{l(training.summary)}</p>
           </div>
           <LottiePlayer

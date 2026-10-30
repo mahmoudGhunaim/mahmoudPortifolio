@@ -14,8 +14,10 @@ export interface TrainingModule {
 
 export interface Training {
   title: Localized;
-  provider: Localized;
-  period: Localized;
+  /** Leave undefined to hide */
+  provider?: Localized;
+  /** Leave undefined to hide */
+  period?: Localized;
   inProgress: boolean;
   summary: Localized;
   modules: TrainingModule[];
@@ -25,12 +27,10 @@ export interface Training {
 export const training: Training = {
   title: {
     en: 'Software Consultancy & Oracle Fusion Training',
-    ar: 'تدريب الاستشارات البرمجية وOracle Fusion',
+    ar: 'تدريب الاستشارات البرمجية ونظام Oracle Fusion',
   },
-  // TODO: replace with the training provider / company name
-  provider: { en: 'Training provider (placeholder)', ar: 'الجهة المدرّبة (نص مؤقت)' },
-  // TODO: replace with real dates
-  period: { en: '2026 — Present', ar: '2026 — حتى الآن' },
+  // TODO: add the training provider, e.g. provider: { en: 'Company name', ar: 'اسم الجهة' },
+  // TODO: add real dates, e.g. period: { en: 'Mar 2026 — Present', ar: 'آذار 2026 — حتى الآن' },
   inProgress: true,
   summary: {
     en: 'A structured programme bridging software development with business consulting — learning how ERP systems like Oracle Fusion Cloud support real organisations, and how consultants translate business needs into working solutions.',

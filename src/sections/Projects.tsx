@@ -31,7 +31,18 @@ export default function Projects() {
                     </div>
 
                     <div className="flex flex-1 flex-col p-6">
-                      <p className="text-xs font-medium tracking-wide text-accent-2 uppercase">{l(project.category)}</p>
+                      <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+                        <span
+                          className={`rounded-full border px-2.5 py-0.5 text-xs font-semibold ${
+                            project.kind === 'client'
+                              ? 'border-success/40 bg-success/10 text-success'
+                              : 'border-border-strong bg-surface-strong text-muted'
+                          }`}
+                        >
+                          {project.kind === 'client' ? t.projects.client : t.projects.personal}
+                        </span>
+                        <p className="text-xs font-medium tracking-wide text-accent-2 uppercase">{l(project.category)}</p>
+                      </div>
                       <h3 className="mt-2 text-xl font-semibold text-text">
                         <bdi>{project.title}</bdi>
                       </h3>

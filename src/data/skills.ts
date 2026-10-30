@@ -7,18 +7,26 @@ export interface SkillGroup {
 }
 
 export const skillGroups: SkillGroup[] = [
-  { id: 'frontend', title: { en: 'Front-End', ar: 'الواجهة الأمامية' }, items: ['React', 'JavaScript', 'HTML', 'CSS'] },
+  {
+    id: 'frontend',
+    title: { en: 'Front-End', ar: 'الواجهة الأمامية' },
+    items: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'Tailwind'],
+  },
   {
     id: 'backend',
     title: { en: 'Back-End', ar: 'الواجهة الخلفية' },
-    items: ['PHP', 'REST API', 'SQL', 'WordPress Plugins'],
+    items: ['PHP', 'Supabase', 'REST API', 'SQL', 'WordPress Plugins'],
   },
   {
-    id: 'tools',
-    title: { en: 'Tools', ar: 'الأدوات' },
-    items: ['Git', 'GitHub', 'Bootstrap', 'Tailwind'],
+    id: 'motion',
+    title: { en: '3D & Motion', ar: 'ثلاثي الأبعاد والحركة' },
+    items: ['Three.js', 'React Three Fiber', 'GSAP', 'Framer Motion'],
   },
-  { id: 'cms', title: { en: 'CMS', ar: 'أنظمة إدارة المحتوى' }, items: ['WordPress', 'Shopify'] },
+  {
+    id: 'platforms',
+    title: { en: 'Platforms & Tools', ar: 'المنصات والأدوات' },
+    items: ['Cloudflare Workers', 'Git', 'GitHub', 'WordPress', 'Shopify', 'Bootstrap'],
+  },
 ];
 
 export const softSkills: Localized<string[]> = {

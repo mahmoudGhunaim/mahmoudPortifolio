@@ -64,6 +64,8 @@ export const ar: Translations = {
     visit: 'زيارة الموقع',
     imageAlt: 'معاينة مشروع',
     role: 'دوري',
+    client: 'مشروع لعميل',
+    personal: 'مشروع شخصي',
   },
   skills: {
     eyebrow: 'الأدوات',

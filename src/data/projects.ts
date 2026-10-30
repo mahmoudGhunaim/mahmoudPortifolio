@@ -17,6 +17,8 @@ export interface Project {
   description: Localized;
   highlights: Localized<string[]>;
   tech: string[];
+  /** 'client' = real client work, 'personal' = concept / personal project */
+  kind: 'client' | 'personal';
   image: string;
   /** Live URL — use '#' (or leave empty) to hide the link */
   url: string;
@@ -48,6 +50,7 @@ export const projects: Project[] = [
       ],
     },
     tech: ['React', 'Vite', 'Cloudflare', 'Role-based access'],
+    kind: 'client',
     image: ardalathathImg,
     url: 'https://ardalathath.com',
   },
@@ -65,6 +68,7 @@ export const projects: Project[] = [
       ar: ['سيارة ثلاثية الأبعاد بالوقت الحقيقي باستخدام React Three Fiber', 'حركة مرتبطة بالتمرير باستخدام GSAP ScrollTrigger', 'تمرير سلس باستخدام Lenis', 'أقسام التصميم والطاقة والمقصورة والمعرض والحجز'],
     },
     tech: ['Next.js', 'React Three Fiber', 'GSAP', 'Lenis'],
+    kind: 'personal',
     image: velaImg,
     url: 'https://vela.mahmoudghunaim132.workers.dev/',
   },
@@ -82,6 +86,7 @@ export const projects: Project[] = [
       ar: ['تصفّح الفئات والمنتجات الرائجة', 'التبديل بين العربية والإنجليزية', 'وضعان داكن وفاتح', 'قائمة المفضّلة وسلة التسوّق'],
     },
     tech: ['Next.js', 'React', 'Cloudflare Workers'],
+    kind: 'personal',
     image: voltImg,
     url: 'https://volt-shop.mahmoudghunaim132.workers.dev/',
   },
@@ -108,6 +113,7 @@ export const projects: Project[] = [
       ],
     },
     tech: ['Next.js', 'Supabase', 'Cloudflare Workers', 'Arabic RTL'],
+    kind: 'client',
     image: adelErpImg,
     url: '#', // private business system — no public link
   },

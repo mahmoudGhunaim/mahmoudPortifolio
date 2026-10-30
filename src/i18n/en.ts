@@ -62,6 +62,8 @@ export const en = {
     visit: 'Visit site',
     imageAlt: 'Preview of',
     role: 'My role',
+    client: 'Client project',
+    personal: 'Personal project',
   },
   skills: {
     eyebrow: 'Toolbox',

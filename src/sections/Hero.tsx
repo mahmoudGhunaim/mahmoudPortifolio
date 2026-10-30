@@ -5,7 +5,7 @@ import { useTheme } from '../hooks/useTheme';
 import { useInView } from '../hooks/useInView';
 import { useMediaQuery, usePrefersReducedMotion } from '../hooks/useMediaQuery';
 import { profile } from '../data/profile';
-import { ArrowIcon } from '../components/Icons';
+import { ArrowIcon, DownloadIcon } from '../components/Icons';
 
 const HeroScene = lazy(() => import('../three/HeroScene'));
 
@@ -119,6 +119,14 @@ export default function Hero() {
               className="glass glow-hover inline-flex items-center gap-2 rounded-xl px-6 py-3.5 font-semibold text-text"
             >
               {t.hero.contact}
+            </a>
+            <a
+              href={profile.cvUrl}
+              download
+              className="inline-flex items-center gap-2 rounded-xl px-4 py-3.5 font-semibold text-muted transition-colors hover:text-text"
+            >
+              <DownloadIcon width={18} height={18} />
+              {t.footer.downloadCv}
             </a>
           </motion.div>
         </motion.div>

@@ -1,7 +1,7 @@
 import Section from '../components/Section';
 import Reveal from '../components/Reveal';
 import LottiePlayer from '../components/LottiePlayer';
-import { GitHubIcon, LinkedInIcon, MailIcon, PhoneIcon } from '../components/Icons';
+import { DownloadIcon, GitHubIcon, LinkedInIcon, MailIcon, PhoneIcon } from '../components/Icons';
 import { useI18n } from '../i18n/I18nProvider';
 import { profile } from '../data/profile';
 
@@ -45,6 +45,14 @@ export default function Contact() {
               </li>
             ))}
           </ul>
+          <a
+            href={profile.cvUrl}
+            download
+            className="bg-accent-gradient mt-4 inline-flex w-full items-center justify-center gap-2 rounded-2xl px-6 py-4 font-semibold text-white shadow-[0_10px_40px_-12px_var(--glow-1)] transition-transform hover:-translate-y-0.5"
+          >
+            <DownloadIcon width={18} height={18} />
+            {t.footer.downloadCv}
+          </a>
         </Reveal>
       </div>
     </Section>

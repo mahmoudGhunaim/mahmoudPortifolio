@@ -34,7 +34,7 @@ export default function Navbar() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        scrolled ? 'glass border-x-0 border-t-0 py-2.5 shadow-[0_8px_30px_-12px_rgb(0_0_0/0.4)]' : 'border-b border-transparent py-4'
+        scrolled ? 'border-b border-border bg-bg/90 py-2.5 shadow-[0_8px_30px_-12px_rgb(0_0_0/0.4)] backdrop-blur-xl backdrop-saturate-150' : 'border-b border-transparent py-4'
       }`}
     >
       <nav aria-label={t.nav.primary} className="container-page flex items-center justify-between gap-4">
