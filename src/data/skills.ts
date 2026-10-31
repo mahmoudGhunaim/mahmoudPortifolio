@@ -25,7 +25,7 @@ export const skillGroups: SkillGroup[] = [
   {
     id: 'platforms',
     title: { en: 'Platforms & Tools', ar: 'المنصات والأدوات' },
-    items: ['Cloudflare Workers', 'Git', 'GitHub', 'WordPress', 'Shopify', 'Bootstrap'],
+    items: ['Oracle Fusion Cloud', 'Cloudflare Workers', 'Git', 'GitHub', 'WordPress', 'Shopify', 'Bootstrap'],
   },
 ];
 
