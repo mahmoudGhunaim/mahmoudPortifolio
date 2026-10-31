@@ -66,6 +66,9 @@ export const ar: Translations = {
     role: 'دوري',
     client: 'مشروع لعميل',
     personal: 'مشروع شخصي',
+    private: 'نظام خاص بالعميل',
+    privateNote: 'بدون رابط عام',
+    stack: 'التقنيات',
   },
   skills: {
     eyebrow: 'الأدوات',

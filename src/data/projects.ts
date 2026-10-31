@@ -20,6 +20,8 @@ export interface Project {
   /** 'client' = real client work, 'personal' = concept / personal project */
   kind: 'client' | 'personal';
   image: string;
+  /** Brand colour of the project itself, used for its light spill */
+  tint: string;
   /** Live URL — use '#' (or leave empty) to hide the link */
   url: string;
 }
@@ -52,43 +54,8 @@ export const projects: Project[] = [
     tech: ['React', 'Vite', 'Cloudflare', 'Role-based access'],
     kind: 'client',
     image: ardalathathImg,
+    tint: '#d9a24a',
     url: 'https://ardalathath.com',
-  },
-  {
-    id: 'vela',
-    title: 'VELA Meridian',
-    category: { en: 'Automotive launch site', ar: 'موقع إطلاق سيارة' },
-    description: {
-      en: 'A cinematic launch site for an all-electric grand tourer, built around a real-time 3D car rendered in the browser.',
-      ar: 'موقع إطلاق سينمائي لسيارة كهربائية فاخرة، يتمحور حول نموذج سيارة ثلاثي الأبعاد يُعرض مباشرة في المتصفح.',
-    },
-    highlights: {
-      // TODO: adjust to describe exactly what you built on this project
-      en: ['Real-time 3D car with React Three Fiber', 'Scroll-driven animation with GSAP ScrollTrigger', 'Smooth scrolling with Lenis', 'Design, energy, interior, gallery and reservation sections'],
-      ar: ['سيارة ثلاثية الأبعاد بالوقت الحقيقي باستخدام React Three Fiber', 'حركة مرتبطة بالتمرير باستخدام GSAP ScrollTrigger', 'تمرير سلس باستخدام Lenis', 'أقسام التصميم والطاقة والمقصورة والمعرض والحجز'],
-    },
-    tech: ['Next.js', 'React Three Fiber', 'GSAP', 'Lenis'],
-    kind: 'personal',
-    image: velaImg,
-    url: 'https://vela.mahmoudghunaim132.workers.dev/',
-  },
-  {
-    id: 'volt-shop',
-    title: 'VOLT Shop',
-    category: { en: 'E-commerce store', ar: 'متجر إلكتروني' },
-    description: {
-      en: 'A Next.js demo store for premium tech and lifestyle accessories: headphones, watches, bags, desk setup and sneakers.',
-      ar: 'متجر تجريبي مبني بـ Next.js لإكسسوارات التقنية ونمط الحياة: سماعات وساعات وحقائب وأدوات مكتب وأحذية رياضية.',
-    },
-    highlights: {
-      // TODO: adjust to describe exactly what you built on this project
-      en: ['Category browsing and trending products', 'English / Arabic language switch', 'Dark and light themes', 'Wishlist and shopping cart'],
-      ar: ['تصفّح الفئات والمنتجات الرائجة', 'التبديل بين العربية والإنجليزية', 'وضعان داكن وفاتح', 'قائمة المفضّلة وسلة التسوّق'],
-    },
-    tech: ['Next.js', 'React', 'Cloudflare Workers'],
-    kind: 'personal',
-    image: voltImg,
-    url: 'https://volt-shop.mahmoudghunaim132.workers.dev/',
   },
   {
     id: 'adel-erp',
@@ -115,6 +82,45 @@ export const projects: Project[] = [
     tech: ['Next.js', 'Supabase', 'Cloudflare Workers', 'Arabic RTL'],
     kind: 'client',
     image: adelErpImg,
+    tint: '#3b82f6',
     url: '#', // private business system — no public link
+  },
+  {
+    id: 'volt-shop',
+    title: 'VOLT Shop',
+    category: { en: 'E-commerce store', ar: 'متجر إلكتروني' },
+    description: {
+      en: 'A Next.js demo store for premium tech and lifestyle accessories: headphones, watches, bags, desk setup and sneakers.',
+      ar: 'متجر تجريبي مبني بـ Next.js لإكسسوارات التقنية ونمط الحياة: سماعات وساعات وحقائب وأدوات مكتب وأحذية رياضية.',
+    },
+    highlights: {
+      // TODO: adjust to describe exactly what you built on this project
+      en: ['Category browsing and trending products', 'English / Arabic language switch', 'Dark and light themes', 'Wishlist and shopping cart'],
+      ar: ['تصفّح الفئات والمنتجات الرائجة', 'التبديل بين العربية والإنجليزية', 'وضعان داكن وفاتح', 'قائمة المفضّلة وسلة التسوّق'],
+    },
+    tech: ['Next.js', 'React', 'Cloudflare Workers'],
+    kind: 'personal',
+    image: voltImg,
+    tint: '#c6f432',
+    url: 'https://volt-shop.mahmoudghunaim132.workers.dev/',
+  },
+  {
+    id: 'vela',
+    title: 'VELA Meridian',
+    category: { en: 'Automotive launch site', ar: 'موقع إطلاق سيارة' },
+    description: {
+      en: 'A cinematic launch site for an all-electric grand tourer, built around a real-time 3D car rendered in the browser.',
+      ar: 'موقع إطلاق سينمائي لسيارة كهربائية فاخرة، يتمحور حول نموذج سيارة ثلاثي الأبعاد يُعرض مباشرة في المتصفح.',
+    },
+    highlights: {
+      // TODO: adjust to describe exactly what you built on this project
+      en: ['Real-time 3D car with React Three Fiber', 'Scroll-driven animation with GSAP ScrollTrigger', 'Smooth scrolling with Lenis', 'Design, energy, interior, gallery and reservation sections'],
+      ar: ['سيارة ثلاثية الأبعاد بالوقت الحقيقي باستخدام React Three Fiber', 'حركة مرتبطة بالتمرير باستخدام GSAP ScrollTrigger', 'تمرير سلس باستخدام Lenis', 'أقسام التصميم والطاقة والمقصورة والمعرض والحجز'],
+    },
+    tech: ['Next.js', 'React Three Fiber', 'GSAP', 'Lenis'],
+    kind: 'personal',
+    image: velaImg,
+    tint: '#ff8a3d',
+    url: 'https://vela.mahmoudghunaim132.workers.dev/',
   },
 ];

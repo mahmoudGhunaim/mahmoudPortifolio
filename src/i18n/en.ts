@@ -64,6 +64,9 @@ export const en = {
     role: 'My role',
     client: 'Client project',
     personal: 'Personal project',
+    private: 'Private client system',
+    privateNote: 'No public link',
+    stack: 'Built with',
   },
   skills: {
     eyebrow: 'Toolbox',
